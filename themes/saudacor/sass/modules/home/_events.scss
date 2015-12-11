@@ -11,7 +11,7 @@
 		font-family: $text_font;
 		color:white;
 
-		@include media-query(768px){
+		@include media-query(998px){
 			height:auto;
 		}
 
@@ -22,7 +22,7 @@
 			height:100%;
 			float:left;
 
-			@include media-query(768px){
+			@include media-query(998px){
 				width:100%;
 				float:none;
 			}
@@ -72,7 +72,7 @@
 				
 			}
 
-			@include media-query(768px){
+			@include media-query(998px){
 				height:auto;
 
 				section{
@@ -100,12 +100,18 @@
 		.event_2{
 			time,h2{
 				@include text-shadow(none);
-			}						
+			}	
+
+			height:50%;
+			width:100%;	
+
+			@include media-query(998px){
+				height:auto;
+			}
 		}
 
 		.event_1{
-			height:auto;
-			width:100%;
+			
 			background-color:cv(primary);
 			color:white;
 		}
