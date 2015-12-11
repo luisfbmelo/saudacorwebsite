@@ -13,12 +13,16 @@ body{
 	}
 }
 
+.entry-content{
+	margin-top:0;
+}
+
 .generic-bg{
 	display:table;
 	background:url('../img/generic_bg.png') no-repeat;
 	background-size:cover;
 	background-position:center;
-	min-height:280px;
+	height:280px;
 	width:100%;
 
 	h1{
