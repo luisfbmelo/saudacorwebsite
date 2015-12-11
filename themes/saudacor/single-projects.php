@@ -34,12 +34,12 @@ get_header(); ?>
 
 				<div class="row">
 					<!--Post content-->
-					<div class="col-xs-12 col-sm-9">
+					<div class="col-xs-12 col-md-9">
 						<?php get_template_part( 'template-parts/projects/content', 'single' ); ?>
 					</div>
 
 					<!--Other posts-->
-					<aside class="col-xs-12 col-sm-3">
+					<aside class="col-xs-12 col-md-3">
 						<?php dynamic_sidebar( 'projects-sidebar' ); ?>
 					</aside>
 				</div>

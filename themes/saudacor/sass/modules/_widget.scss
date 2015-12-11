@@ -28,15 +28,18 @@ aside{
 	}
 
 	.widget,
-	&.widget{
-		border-left:1px solid cv(light-gray);
-		padding-left:20px;
+	&.widget{				
+
+		@include media-query-min(992px){
+			padding-left:20px;
+			border-left:1px solid cv(light-gray);
+		}
 	}
 }
 
 .dark-bg{
-	.widget{
-		border:1px solid cv(light-gray);
+	.widget{		
 		padding:20px;
+		border:1px solid cv(light-gray);		
 	}
 }
