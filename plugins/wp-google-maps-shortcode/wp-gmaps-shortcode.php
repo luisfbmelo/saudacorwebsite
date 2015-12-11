@@ -49,7 +49,8 @@ function wp_gmaps_shortcode( $atts ) {
 			var map_options = {
 				zoom: <?php echo esc_attr( $atts['zoom'] ) ?>,
 				center: location,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				scrollwheel: false
 			}
 			map_<?php echo $map_id; ?> = new google.maps.Map(document.getElementById("<?php echo $map_id; ?>"), map_options);
 			
