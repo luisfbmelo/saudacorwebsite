@@ -243,13 +243,14 @@ header{
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus{
 	@include border-radius(0);
-	border:1px solid $dark-text;
+	border:1px solid cv(light-gray);
 	background:transparent;
 
 	.menu-label{
 		font-family: $text_font;
 		color:$dark-text;
 		text-transform:uppercase;
+		font-weight:700;
 	}
 
 	.icon-bar{
