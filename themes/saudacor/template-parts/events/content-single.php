@@ -20,7 +20,7 @@ $event_long = get_field('event_long');
 $event_program = get_field('event_program');
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="specific-single-post">
+<article id="post-<?php the_ID(); ?>" <?php post_class('specific-single-post'); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h5 class="entry-title">', '</h5>' ); ?>
 		

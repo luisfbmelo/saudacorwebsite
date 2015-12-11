@@ -13,7 +13,7 @@ $output = '';
 $downloads = pamd::get_downloads( $post->ID, false, 'array');
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="specific-single-post">
+<article id="post-<?php the_ID(); ?>" <?php post_class('specific-single-post'); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h5 class="entry-title">', '</h5>' ); ?>
 		<div class="row">

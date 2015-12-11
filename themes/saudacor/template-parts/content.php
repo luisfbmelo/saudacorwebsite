@@ -11,7 +11,7 @@ $categories = get_the_category();
 $downloads = pamd::get_downloads( $post->ID, false, 'array');
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="row">
+<article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
 	<div class="col-xs-2 col-md-1 date-container">
 		<div class="post-day"><?php echo get_the_date('d'); ?></div>
 		<div class="post-month"><?php echo get_the_date('M'); ?></div>
