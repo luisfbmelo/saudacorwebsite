@@ -37,7 +37,7 @@
 
 			@include transition(all 0.2s ease);
 			&:hover{
-				@include opacity(0.5);
+				 @include opacity(0.5);
 			}
 			/* img{
 				min-width:100%;
