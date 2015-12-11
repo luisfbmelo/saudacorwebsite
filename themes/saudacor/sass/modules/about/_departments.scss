@@ -1,0 +1,48 @@
+.department-section{
+	padding:60px 0;
+	background-color:cv(light-light-gray);
+
+	h1{
+		margin-bottom:40px;
+	}
+
+	img{
+		width:100%;
+		height:auto;
+
+		@include border-radius(100%);
+		border:5px solid cv(light-gray);
+		max-width:240px;
+	}
+
+	h4{
+		margin:20px 0;
+		font-weight:600;
+	}
+
+	p{
+		line-height:1.5;
+
+	}
+
+	.dep-desc-wrapper{
+		display:table;
+
+		.dep-desc{
+			display:table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	article{
+		padding-bottom:30px;
+	}
+
+	.row + .row{
+		article{
+			border-top:1px solid cv(light-gray);
+			padding-top:30px;
+		}
+	}
+
+}

@@ -1,0 +1,88 @@
+.cta,
+.submit-btn input{
+	font-family: $text-font;
+	@include font-size(18px);	
+	padding:15px 25px;
+	border:none;
+    display: inline-block;
+
+	@include transition(all 0.2s ease);
+
+	&:hover,
+	&:active,
+	&:focus{
+		text-decoration:none;
+	}
+
+	&.primary{
+		background-color: cv(primary);
+		border:1px solid cv(primary);			
+		color:white;
+
+		&:hover,
+		&.active{
+			background-color: cv(primary, light);
+		}
+	}
+
+/* 	&.outlined{
+		font-weight:600;
+	} */
+
+	&.small{
+		padding:10px 20px;
+		@include font-size(16px);
+	}
+
+	&.xsmall{
+		padding:5px 10px;
+		@include font-size(11px);
+	}
+
+	&.primary.outlined{
+		background: transparent;
+		color:cv(primary);
+		border:1px solid cv(primary);		
+
+		&:hover,
+		&.active{
+			background-color: cv(primary);
+			color:white;
+		}
+	}
+
+	&.blank{
+		background-color: white;		
+		color:black;
+	}
+
+	&.blank.outlined{
+		background: transparent;
+		color:white;
+		border:1px solid white;
+
+		&:hover,
+		&.active{
+			background-color: white;
+			color:$light-text;
+		}
+	}
+}
+
+.sec-cta{
+	&.aligncenter{
+		text-align:center;
+		margin:0 auto;
+	}
+}
+
+.submit-btn input{
+	background: transparent;
+	color:white;
+	border:2px solid white;
+
+	&:hover{
+		background-color: white;
+		color:$light-text;
+	}
+}

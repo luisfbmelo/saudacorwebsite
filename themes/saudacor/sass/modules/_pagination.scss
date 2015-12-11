@@ -1,0 +1,30 @@
+.wp-pagenavi{
+	font-family:$text_font;
+	margin:30px 0;
+
+	span,
+	a{
+		padding:10px 15px;
+		color:$light-text;
+		background:white;
+		border:1px solid cv(light-gray);
+		text-decoration:none;
+		@include transition(all 0.2s ease);
+
+		&:hover{
+			text-decoration:none;
+			border:1px solid cv(light-gray)!important;
+			background-color:cv(primary);
+			color:white;
+		}
+
+		&.current{
+			border:1px solid cv(light-gray)!important;
+			background-color:cv(primary);
+			color:white;
+			font-weight:400;
+		}
+	}
+
+	
+}

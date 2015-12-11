@@ -1,0 +1,42 @@
+aside{
+	.widget-area,
+	.widget,
+	&.widget{
+		margin-top:30px;
+	}
+
+	.widget{
+		background-color:white;
+		padding:0;		
+
+		// With LISTS
+		li{
+			margin-top:30px;
+			list-style: none;
+			font-family:$text_font;
+
+			& + li{
+				border-top:1px solid cv(light-gray);
+				padding-top:15px;
+				margin-top:15px;
+			}
+
+			a{
+				color:cv(primary);
+			}
+		}
+	}
+
+	.widget,
+	&.widget{
+		border-left:1px solid cv(light-gray);
+		padding-left:20px;
+	}
+}
+
+.dark-bg{
+	.widget{
+		border:1px solid cv(light-gray);
+		padding:20px;
+	}
+}

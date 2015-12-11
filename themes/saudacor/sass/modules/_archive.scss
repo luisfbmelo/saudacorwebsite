@@ -1,0 +1,151 @@
+.post-img{
+	margin-top:20px;
+	a{
+		display:block;
+		@include transition(all 0.2s ease);
+		&:hover{
+			@include opacity(0.5);
+		}
+	}
+	img{
+		width:100%;
+		height:auto;
+	}
+}
+
+.archive-container{
+	padding-top:30px;
+	padding-bottom:30px;
+
+	article{
+		margin-top:30px;
+	}
+
+	// Date container
+	.date-container{
+		background-color:cv(tertiary);
+		padding:20px 10px;
+		color:white;
+		font-family:$text_font;
+		text-align:center;
+
+		& > div + div{
+			margin-top:10px;
+		}
+
+		.post-day{
+			@include font-size(30px);
+		}
+		.post-month{
+			@include font-size(12px);
+		}
+		.post-year{
+			@include font-size(18px);
+		}
+	}
+
+	// Single post on a posts list
+	.article-single-container{		
+		background-color:white;
+
+		.post-img{
+			max-height:250px;
+			overflow:hidden;
+			margin-top:0;
+		}
+
+		.article-text{
+			padding:20px;
+			h5{
+				margin-bottom:15px;
+				a{
+					color:$dark-text;
+				}
+			}		
+			
+
+			p{
+				color:$light-text;
+				@include font-size(14px);
+				line-height:1.5;
+			}
+			
+			.moretag{
+				margin-top:20px;
+			}
+		}
+	}
+}
+
+.categories-container{
+	margin-bottom:20px;
+	a{
+		& + a{
+			margin-left:10px;
+		}
+	}
+}
+
+// Post details
+.generic-single-post{
+	padding:20px;	
+	margin-top:30px;
+}
+
+.specific-single-post{
+	margin-top:20px;
+	&.dark-bg{
+		padding:20px;
+	}
+}
+
+.generic-single-post,
+.specific-single-post{
+	background-color:white;		
+	margin-bottom:30px;
+
+	h5{
+		color:$dark-text;
+	}
+
+	time,
+	.event-place,
+	.proj-types{
+		display:block;
+		font-family: $text_font;
+		color:$light-text;
+		@include font-size(14px);
+		margin-top:10px;
+	}	
+
+	p{
+		color:$light-text;
+		@include font-size(14px);
+		line-height:1.5;
+	}
+
+	.entry-header{
+		font-family: $text_font;
+		color:$light-text;
+	}
+
+	img{
+		max-width:100%;
+		height:auto;
+	}
+}
+
+.dark-bg{
+	background-color:cv(light-light-gray);
+
+	.article-single-container,
+	.generic-single-post{
+		border:1px solid cv(light-gray);
+	}
+	
+}
+
+.generic-page{
+	margin-top:30px;
+	margin-bottom:30px;
+}

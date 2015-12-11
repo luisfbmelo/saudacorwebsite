@@ -1,0 +1,144 @@
+// Colors
+.color-primary{
+	color: cv(primary);
+}
+
+.color-secondary{
+	color: cv(secondary);
+}
+
+.color-tertiary{
+	color: cv(tertiary);
+}
+
+// Text
+.dark-text{
+	color: $dark-text;
+}
+
+.light-text{
+	color: $light-text;
+}
+
+// Menu
+%menu-container{
+	@include font-size(14px);
+	font-family:$text_font;
+}
+
+%menu-text{
+	color:$menu-text;	
+}
+
+.menu-text{
+	color:$menu-text;
+}
+
+// Headings
+%heading{
+	color:$normal-text;
+	line-height:1.2;
+} 
+
+h1{
+	position:relative;
+	padding-bottom:20px;
+	font-family: $title_font;
+	@include font-size(60px);	
+
+	&:after{
+		position:absolute;
+		content:"";
+		height:2px;
+		width:100px;
+		
+		left:0;
+		bottom:0;
+		margin-left:0;
+		background-color: cv(primary);		
+	}
+
+	&.align-center{
+		text-align:center;
+
+		&:after{
+			left:50%;
+			margin-left:-50px;
+		}
+	}
+
+	@include media-query(768px){
+		@include font-size(45px);
+	}
+}
+
+h2{
+	font-family: $text_font;
+	@include font-size(45px);
+	font-weight: 700;
+	@extend %heading;
+
+	@include media-query(768px){
+		@include font-size(35px);
+	}
+}
+
+h3{
+	font-family: $text_font;
+	@include font-size(30px);
+	font-weight: 700;
+	@extend %heading;
+	@include media-query(768px){
+		@include font-size(25px);
+	}
+}
+
+h4{
+	font-family: $text_font;
+	@include font-size(24px);
+	font-weight: 700;
+	@extend %heading;
+	@include media-query(768px){
+		@include font-size(20px);
+	}
+}
+
+h5,
+.widget h2,
+.widget h3{
+	font-family: $text_font;
+	@include font-size(22px);
+	font-weight: 600;
+	@extend %heading;
+	@include media-query(768px){
+		@include font-size(18px);
+	}
+}
+
+h6{
+	font-family: $text_font;
+	@include font-size(16px);
+	font-weight: 600;
+	@extend %heading;
+}
+
+p{
+	font-family: $text_font;
+	@include font-size(16px);
+	line-height:1.5;
+	margin-bottom:15px;
+}
+
+// Borders
+.bottom-thin{
+	border-bottom:1px solid cv(light-gray);
+}
+
+// Helpers
+.fullwidth{
+	width:100%;
+}
+
+.fullsection{
+	height:100%!important;
+}

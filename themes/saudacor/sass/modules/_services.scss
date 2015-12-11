@@ -1,0 +1,37 @@
+.services-section{
+	padding:60px 0;
+	text-align:center;
+
+	h1{
+		margin-bottom:40px;
+	}
+
+	.row{
+		& > article{
+			margin-bottom:40px;
+		}
+	}
+
+	img{
+		max-width:70px;
+	}
+
+	.serv-img-wrapper{
+		display:inline-block;
+		border:5px solid cv(primary);
+		padding:30px;
+		@include border-radius(100%);
+		margin-bottom:30px;
+
+		width:$services-box;
+		height:$services-box;
+	}
+
+	h5{
+		margin-bottom:20px;
+	}
+
+	p{
+		@include font-size(14px);
+	}
+}

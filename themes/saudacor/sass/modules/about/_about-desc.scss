@@ -1,0 +1,7 @@
+.about-desc{
+	text-align:center;
+	font-family:$text_font;
+	padding:80px 0;
+	@include font-size(18px);
+	line-height:1.8;
+}

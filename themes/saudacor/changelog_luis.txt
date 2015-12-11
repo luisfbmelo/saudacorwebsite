@@ -1,0 +1,6 @@
+CORE CHANGES
+- Changed wp-admin/includes/template.php at wp_category_checklist() function to a correct categories tree display
+
+CUSTOM MADE PLUGINS
+- Saudacor-subcat
+- Saudacor-recentposts

@@ -1,0 +1,37 @@
+@import "menus";
+@import "footer";
+@import "cta";
+@import "search";
+@import "no-data";
+@import "faq";
+@import "404";
+
+// Home
+@import "home/banner";
+@import "home/brief";
+@import "home/appointment";
+@import "home/brief-news";
+@import "home/events";
+@import "home/requisition";
+
+// About
+@import "about/administration";
+@import "about/about-desc";
+@import "about/departments";
+@import "about/contact";
+
+// Projects
+@import "projects/list";
+
+// Events
+@import "events/events-list";
+@import "events/events-details";
+
+// Shared
+@import "services";
+@import "gallery";
+@import "pagination";
+@import "archive";
+@import "widget";
+@import "media";
+@import "breadcrumbs";

@@ -1,0 +1,35 @@
+.post-attached-media{
+	margin:20px 0;
+	font-family: $text_font;
+	a{
+		display:inline-block;
+		i{
+			padding:10px;
+			background-color:cv(primary);
+			color:white;
+
+			@include transition(all 0.2s ease);
+		}
+
+		span{
+			padding:10px;
+			background-color:cv(light-light-gray);
+			color:$light-text;
+			@include font-size(14px);
+		}
+
+		&:hover,
+		&:active,
+		&:focus{
+			text-decoration:none;
+
+			i{
+				@include opacity(0.5);
+			}
+		}
+	}
+}
+
+.post-attached-media-title{
+	margin-top:20px;
+}

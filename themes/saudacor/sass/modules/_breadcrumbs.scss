@@ -1,0 +1,12 @@
+.breadcrumbs{
+	padding:20px 0;
+	background-color:white;
+	font-family: $text_font;
+	@include font-size(14px);
+	color:$light-text;
+	line-height:1.5;
+
+	a{
+		color:$light-text;
+	}
+}

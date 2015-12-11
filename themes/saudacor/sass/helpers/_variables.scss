@@ -1,0 +1,47 @@
+// Fonts
+$title_font: 'Titillium Web';
+$text_font: 'Open Sans';
+
+// Colors
+$colors: (
+	primary: #58c49a,
+	secondary: #4ec4c8,
+	tertiary: #1e4455,
+	light-gray: #eeeeee,
+	light-light-gray: #f9f9f9,
+	search: #b7b7b7,
+	footer: #223842
+);
+
+$variations: (
+  light: (
+    function: lighten,
+    parameters: 15%
+  ),
+  dark: (
+    function: darken,
+    parameters: 10%
+  ),
+  fade: (
+    function: rgba,
+    parameters: .7
+  ),
+  gray: (
+    function: grayscale
+  ),
+  shade: (
+    function: mix,
+    parameters: white 80%
+  )
+);
+
+// Text
+$light-text:#787878;
+$dark-text:#494949;
+$menu-text:#6f6f6f;
+$normal-text:rgb(51, 51, 51);
+
+// Dimensions
+$banner-height: 550px;
+$banner-small-height: 250px;
+$services-box:145px;

@@ -1,0 +1,32 @@
+.brief-description-section{
+	background-color: cv(light-light-gray);
+	padding:40px 0;
+	.container {
+		.row{
+			& > article{
+				margin-bottom:30px;
+			}
+
+			@include media-query(768px){
+				& > div{
+					display:none;
+				}
+			}
+		}
+
+		img{
+			width:100%;
+		}
+
+		h3{
+			margin-bottom: 30px;
+			margin-top:40px;
+		}
+
+		p{
+			margin-bottom:40px;
+			color:$dark-text;
+			@include font-size(14px);
+		}
+	}
+}

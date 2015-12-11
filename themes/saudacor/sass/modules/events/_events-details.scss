@@ -1,0 +1,53 @@
+.wp_gmaps_canvas{
+	margin-top:20px;
+	margin-bottom:10px;
+	width:100%!important;
+
+	@include media-query(768px){
+		height:150px!important;
+	}
+}
+
+.event-program{
+	margin:20px 0;
+	h6{
+		margin-bottom:10px;
+	}
+
+	table{
+		border:1px solid cv(light-gray);
+		width:100%;
+		font-family:$text_font;
+		tr{
+			td{
+				border:1px solid cv(light-gray);
+				padding:20px 10px;
+				color:cv(primary);
+				font-weight:700;
+				@include font-size(16px);
+
+				& + td{
+					color:$dark-text;
+					font-weight:600;
+					@include font-size(14px);
+				}
+			}
+
+			&:nth-child(odd){
+				background-color:cv(light-light-gray);
+			}
+
+		}
+	}
+}
+
+.event-single{
+	.specific-single-post{
+		margin-top:30px;
+	}
+
+	.event-place{
+		font-family: $text_font;
+		@include font-size(16px);
+	}
+}

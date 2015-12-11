@@ -1,0 +1,55 @@
+.site > footer{
+	background-color:cv(footer);
+	padding:40px 0;
+
+	h3{
+		position:relative;
+		padding-bottom:20px;
+		color:white;
+		font-weight:300;
+		font-family: $title_font;
+		margin-bottom:30px;
+
+		&:after{
+			position:absolute;
+			content:"";
+			height:2px;
+			width:100px;
+			
+			left:0;
+			bottom:0;
+			margin-left:0;
+			background-color: white;		
+		}
+	}
+
+	ul{
+		font-family:$text_font;
+		@include font-size(14px);
+		list-style:disc;
+		color:white;
+	    margin-left: 15px;
+
+		li{
+			line-height:1.5;
+			padding-bottom:15px;
+			a{
+				color:white;
+
+				&:hover{
+					color:white;
+				}
+			}
+		}
+	}	
+
+	p{
+		color:white;
+		font-family:$text_font;
+		@include font-size(14px);
+	}
+
+	.footer-live-link{
+		color:cv(secondary);
+	}
+}

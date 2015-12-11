@@ -1,0 +1,29 @@
+.wpb_af_area{
+	font-family: $text_font;
+
+	.type-wpb_af_faq{
+		background-color:transparent;
+		
+		a{
+			border-bottom:1px solid cv(light-gray);
+			font-weight:400;
+		}
+
+		&:hover,
+		&.wpb-submenu-indicator-minus{
+			a{
+				background-color:cv(primary);
+				color:white;
+			}
+		}
+
+		p{
+			margin-top:10px;
+			@include font-size(14px);
+		}
+	}
+}
+
+.wpb_af_flat_theme .wpb_af_area li > a > span.wpb-submenu-indicator{
+	line-height:18px!important;
+}

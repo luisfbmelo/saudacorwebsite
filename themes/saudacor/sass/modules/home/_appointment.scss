@@ -1,0 +1,31 @@
+.appointment-section{
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+	*{
+		color:white;
+	}
+
+	padding:20px 0;
+
+	h1{
+		margin:40px 0;
+	}
+
+	p{
+		margin:40px 0 20px;
+	}
+
+	.sec-cta{
+		margin:40px 0;
+	}
+
+	.cta{
+		font-weight:400;
+	}
+}
+
+.no-backgroundsize .appointment-section {
+  background-position:center;
+  background-color:$light-text;
+}
