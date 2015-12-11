@@ -13,7 +13,7 @@ $output = '';
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="row">
+<article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
 	<div class="col-xs-12">
 		<div class="article-single-container">
 			<div class="article-text">			

@@ -28,12 +28,6 @@
 			}
 		}
 
-		.last-event{
-			@include media-query(768px){
-				height:350px;
-			}			
-		}
-
 		article{
 			position:relative;
 
@@ -77,11 +71,20 @@
 				bottom:0;
 				
 			}
+
+			@include media-query(768px){
+				height:auto;
+
+				section{
+					position:relative;
+				}
+			}
 		}
 
 		.last-event{
 			background-size:cover;
 			background-repeat:no-repeat;
+			background-position:center;
 		}
 
 		.event-overlay{

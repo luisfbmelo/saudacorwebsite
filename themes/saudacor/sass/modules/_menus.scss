@@ -75,14 +75,26 @@ header{
 
 	.navbar-header{
 
-		.navbar-brand{
-			height:95px;
-			padding: 0 0 0 15px;
-		}
 		img{
 			height:100%;
 			padding:10px 0;
 		}
+
+		.navbar-brand{
+			height:95px;
+			padding: 0 0 0 15px;
+
+			@include media-query(350px){
+				height:auto;
+				max-width:200px;
+
+				img{
+					height:auto;
+					width:100%;
+				}
+			}
+		}
+		
 	}
 
 	.current-menu-item, 
@@ -228,18 +240,33 @@ header{
 }
 
 // Menu toggle style
-.navbar-default  .navbar-toggle{
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus{
 	@include border-radius(0);
-	border:none;
+	border:1px solid $dark-text;
+	background:transparent;
+
+	.menu-label{
+		font-family: $text_font;
+		color:$dark-text;
+		text-transform:uppercase;
+	}
+
 	.icon-bar{
 		background-color:cv(secondary);
 	}
 }
 
 .navbar-default .navbar-toggle:hover, 
-.navbar-default .navbar-toggle:focus{
+.navbar-default .navbar-toggle:not(.collapsed){
 	background-color:cv(secondary);
+	border-color:cv(secondary);
+
 	.icon-bar{
 		background-color:white;
+	}
+
+	.menu-label{
+		color:white;
 	}
 }
