@@ -11,6 +11,10 @@ body{
 	@include media-query(1200px){
 		padding-top:97px;
 	}
+
+	@include media-query(350px){
+		padding-top:83px;
+	}
 }
 
 .entry-content{

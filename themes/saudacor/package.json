@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.10.1",
     "gulp-compass": "^2.1.0",
     "gulp-sass": "^2.1.0"
   },

@@ -73,10 +73,15 @@
 			margin-top:10px;
 			margin-bottom:15px;
 			@include font-size(14px);
+			line-height:1.5;
 
 			span{
 				@include font-size(16px);
 				color:cv(primary);
+			}
+
+			& > div{
+				margin-bottom:5px;
 			}
 		}
 

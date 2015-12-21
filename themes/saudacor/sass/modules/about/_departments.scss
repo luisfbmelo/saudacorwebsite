@@ -6,14 +6,22 @@
 		margin-bottom:40px;
 	}
 
-	img{
-		width:100%;
-		height:auto;
+	.dep-thumb{
+		img{
+			width:100%;
+			height:auto;
 
-		@include border-radius(100%);
-		border:5px solid cv(light-gray);
-		max-width:240px;
+			@include border-radius(100%);
+			border:5px solid cv(light-gray);
+			max-width:240px;
+		}
+
+		@include media-query(768px){
+			text-align: center;
+		}
 	}
+
+	
 
 	h4{
 		margin:20px 0;
@@ -27,6 +35,10 @@
 
 	.dep-desc-wrapper{
 		display:table;
+
+		@include media-query(768px){
+			text-align: center;
+		}
 
 		.dep-desc{
 			display:table-cell;

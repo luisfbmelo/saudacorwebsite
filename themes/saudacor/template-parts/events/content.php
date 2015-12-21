@@ -25,13 +25,13 @@ $downloads = pamd::get_downloads( $post->ID, false, 'array');
 		<?php } ?>
 			<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark" title="'.get_the_title().'">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 			<div class="row event-meta">
-				<div class="col-xs-6 ">
+				<div class="col-xs-12 col-sm-6">
 					<div class="event-place">
 						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 						<?php echo $event_place; ?>
 					</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-sm-6">
 					<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
 					<time><?php echo $event_hour; ?></time>
 				</div>

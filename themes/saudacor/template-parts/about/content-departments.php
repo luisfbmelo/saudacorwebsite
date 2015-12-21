@@ -11,7 +11,7 @@ $loop = new WP_Query(array('post_type' => 'departments', 'orderby' => 'post_id',
 		 			<article class="col-xs-12">
 		 				<div class="row">
 		 					<?php if (has_post_thumbnail()) : ?>
-			 					<div class="col-xs-12 col-sm-3">
+			 					<div class="col-xs-12 col-sm-3 dep-thumb">
 			 						<?php the_post_thumbnail(); ?>
 			 					</div>
 			 				<?php endif; ?>
