@@ -19,7 +19,7 @@
 	.serv-img-wrapper{
 		display:inline-block;
 		border:5px solid cv(primary);
-		padding:30px;
+		padding:25px;
 		@include border-radius(100%);
 		margin-bottom:30px;
 
@@ -27,8 +27,20 @@
 		height:$services-box;
 	}
 
-	h5{
-		margin-bottom:20px;
+	h6{
+		margin-bottom:30px;
+		position:relative;
+		padding-bottom:30px;
+		&:after{
+			content:"";
+			height:3px;
+			width:50px;
+			position:absolute;
+			bottom:0;
+			left:50%;
+			margin-left:-25px;
+			background-color:cv(light-gray);
+		}
 	}
 
 	p{

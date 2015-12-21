@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<meta name="description" content="<?php bloginfo('description');?>" />
+
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="/saudacor-wp/wp-content/themes/saudacor/img/favicon/apple-icon-57x57.png">

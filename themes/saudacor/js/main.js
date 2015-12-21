@@ -16,6 +16,14 @@
 
 		// Mixitup for Projects
 		$('.mixitup-container').mixItUp();
+
+		// Menu collapse
+		$('.navbar-collapse').on('hide.bs.collapse', function () {
+			$('body').removeClass('noScroll');
+		});
+		$('.navbar-collapse').on('show.bs.collapse', function () {
+			$('body').addClass('noScroll');
+		});
 	}
 
 

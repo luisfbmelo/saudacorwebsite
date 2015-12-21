@@ -23,7 +23,7 @@ $downloads = pamd::get_downloads( $post->ID, false, 'array');
 		<?php }else{ ?>
 			<div class="col-xs-12">
 		<?php } ?>
-			<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark" title="Ler mais">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+			<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark" title="'.get_the_title().'">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 			<div class="row event-meta">
 				<div class="col-xs-6 ">
 					<div class="event-place">

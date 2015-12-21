@@ -9,11 +9,15 @@ aside{
 		background-color:white;
 		padding:0;		
 
-		// With LISTS
-		li{
+		.widget-title + *{
 			margin-top:30px;
+		}
+
+		// With LISTS
+		li{			
 			list-style: none;
 			font-family:$text_font;
+			line-height:1.5;
 
 			& + li{
 				border-top:1px solid cv(light-gray);

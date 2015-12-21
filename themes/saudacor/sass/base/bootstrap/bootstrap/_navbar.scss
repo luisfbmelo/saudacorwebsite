@@ -18,7 +18,7 @@
   @include clearfix;
 
   //@media (min-width: $grid-float-breakpoint) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     border-radius: $navbar-border-radius;
   }
 }
@@ -33,7 +33,7 @@
   @include clearfix;
 
   //@media (min-width: $grid-float-breakpoint) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     float: left;
   }
 }
@@ -63,7 +63,7 @@
   }
 
   //@media (min-width: $grid-float-breakpoint) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     width: auto;
     border-top: 0;
     box-shadow: none;
@@ -180,7 +180,7 @@
   }
 
   //@media (min-width: $grid-float-breakpoint) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
@@ -223,7 +223,7 @@
   }
 
   //@media (min-width: $grid-float-breakpoint) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     display: none;
   }
 }
@@ -244,7 +244,7 @@
   }
 
   //@media (max-width: $grid-float-breakpoint-max) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1201px) {
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
@@ -270,7 +270,7 @@
 
   // Uncollapse the nav
   //@media (min-width: $grid-float-breakpoint) {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1201px) {
     float: left;
     margin: 0;
 
@@ -367,7 +367,7 @@
   @include navbar-vertical-align($line-height-computed);
 
  // @media (min-width: $grid-float-breakpoint) {
- @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1201px) {
     float: left;
     margin-left: $navbar-padding-horizontal;
     margin-right: $navbar-padding-horizontal;
@@ -384,7 +384,7 @@
 // Declared after the navbar components to ensure more specificity on the margins.
 
 //@media (min-width: $grid-float-breakpoint) {
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .navbar-left {
     float: left !important;
   }
@@ -477,7 +477,7 @@
     }
 
     //@media (max-width: $grid-float-breakpoint-max) {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1201px) {
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
@@ -612,7 +612,7 @@
     }
 
     //@media (max-width: $grid-float-breakpoint-max) {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1201px) {
       // Dropdowns get custom display
       .open .dropdown-menu {
         > .dropdown-header {

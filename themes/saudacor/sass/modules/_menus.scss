@@ -54,6 +54,9 @@ header{
 .navbar-collapse{
 	padding-left:0;
 	padding-right:0;
+	max-height:none!important;
+	overflow-y:hidden!important;
+	height:auto;
 }
 
 .navbar{
@@ -63,6 +66,17 @@ header{
 	min-height:95px;
 	margin-bottom:0;
 	@include border-radius(0);
+	max-height:100%;
+	
+
+	@include media-query(1200px){
+		overflow-y:auto;
+		border-bottom: 1px solid cv(light-gray);
+	}
+
+	@include media-query(350px){
+		min-height: initial!important;
+	}
 
 	& > .container{
 		background-color: white;
@@ -97,6 +111,7 @@ header{
 		
 	}
 
+	// Active element
 	.current-menu-item, 
 	.current-menu-parent, 
 	.current-category-ancestor,
@@ -140,7 +155,7 @@ header{
 	    		display:block;
 				height:50px;
 				width:100%;
-			    line-height: 3.3;
+			    line-height: 3.5;
 			}
 		}
 	}
@@ -161,12 +176,18 @@ header{
 		}		
 	}	
 
+	// Dropdown menu style
 	ul.dropdown-menu{
 		margin:0;
 		padding:0;
 		@include border-radius(0);
-		border:none;
-		width:100%;
+		border:none;		
+
+		@include media-query('1200px'){
+			position:static;
+			@include box-shadow(none);
+			width:100%;
+		}
 
 		.active a{
 			background-color: cv(secondary)!important;
@@ -220,9 +241,22 @@ header{
 		    border-right: 10px solid transparent;
 		    border-left: 10px solid transparent;
 		    color:$menu-text;
-		    margin-top:18px;
+		    margin-top:20px;
+		}				
+	}
+
+	// Caret on mobile when active
+	.navbar-nav{
+		.current-menu-item, 
+		.current-menu-parent, 
+		.current-category-ancestor,
+		.current-post-ancestor{
+			.caret-wrapper.in-mobile{
+				.caret{
+					color:white;
+				}
+			}
 		}
-				
 	}
 }
 
@@ -258,6 +292,7 @@ header{
 	}
 }
 
+// Set toggle state
 .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:not(.collapsed){
 	background-color:cv(secondary);

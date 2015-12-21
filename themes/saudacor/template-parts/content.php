@@ -32,13 +32,13 @@ $downloads = pamd::get_downloads( $post->ID, false, 'array');
 
 			<div class="article-text">			
 			
-				<?php the_title( sprintf( '<h5 class="entry-title"><a href="%s" rel="bookmark" title="Ler mais">', esc_url( get_permalink() ) ), '</a></h5>' ); ?>
+				<?php the_title( sprintf( '<h5 class="entry-title"><a href="%s" rel="bookmark" title="'.get_the_title().'">', esc_url( get_permalink() ) ), '</a></h5>' ); ?>
 
 				<?php 
 					if ( ! empty( $categories ) ) {
 						echo '<div class="categories-container">';
 					    foreach( $categories as $category ) {
-					        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ) . '" class="cta primary xsmall">' . esc_html( $category->name ) . '</a>';
+					        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" alt="' . esc_attr( sprintf( __( 'Ver todos os artigos de %s', 'textdomain' ), $category->name ) ) . '" title="' . esc_attr( sprintf( __( 'Ver todos os artigos de %s', 'textdomain' ), $category->name ) ) . '" class="cta primary xsmall">' . esc_html( $category->name ) . '</a>';
 					    }
 					    echo $output;
 					    echo '</div>';

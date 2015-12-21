@@ -22,7 +22,9 @@ class SimpleLinkListWidget extends WP_Widget {
 
 	public function widget( $args, $instance ) {
 		extract($args);
-		$title = apply_filters('widget_title', empty($instance['title']) ? __('List') : $instance['title']);
+		//$title = apply_filters('widget_title', empty($instance['title']) ? __('List') : $instance['title']);
+		// Set title to NULL if no given
+		$title = apply_filters('widget_title', empty($instance['title']) ? null : $instance['title']);
 		$type = empty($instance['type']) ? 'unordered' : $instance['type'] ;
 		$reverse = isset($instance['reverse']) ? $instance['reverse'] : false;
 		$amount = empty($instance['amount']) ? 3 : $instance['amount'];
@@ -41,7 +43,14 @@ class SimpleLinkListWidget extends WP_Widget {
 			$item_targets = array_reverse($item_targets);
 		}
 
-		echo $before_widget .  $before_title . $title . $after_title;
+		// Print title
+		if (is_null($title) || empty($title)){
+			echo $before_widget;
+		}else{
+			echo $before_widget .  $before_title . $title . $after_title;
+		}
+
+		
 		if ($type == "ordered") { echo "<ol ";} else { echo("<ul "); } ?> class="list">
 
 		<?php foreach ($items as $num => $item) : 

@@ -17,6 +17,10 @@ body{
 	margin-top:0;
 }
 
+.noScroll{
+	overflow:hidden!important;
+}
+
 .generic-bg{
 	display:table;
 	background:url('../img/generic_bg.png') no-repeat;

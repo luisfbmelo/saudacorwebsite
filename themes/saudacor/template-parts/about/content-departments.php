@@ -10,10 +10,12 @@ $loop = new WP_Query(array('post_type' => 'departments', 'orderby' => 'post_id',
 		 		<div class="row">
 		 			<article class="col-xs-12">
 		 				<div class="row">
-		 					<div class="col-xs-12 col-sm-3 text-center">
-		 						<?php the_post_thumbnail(); ?>
-		 					</div>
-		 					<div class="col-xs-12 col-sm-9 dep-desc-wrapper text-center">
+		 					<?php if (has_post_thumbnail()) : ?>
+			 					<div class="col-xs-12 col-sm-3">
+			 						<?php the_post_thumbnail(); ?>
+			 					</div>
+			 				<?php endif; ?>
+		 					<div class="col-xs-12 <?=(has_post_thumbnail()) ? 'col-sm-9' : 'col-sm-12' ?> dep-desc-wrapper">
 		 						<div class="dep-desc">
 		 							<h4><?php the_title(); ?></h4>
 		 							<p><?php the_content(); ?></p>

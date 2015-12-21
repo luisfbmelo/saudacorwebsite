@@ -81,7 +81,6 @@ function saudacor_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-
 	
 }
 endif; // saudacor_setup
