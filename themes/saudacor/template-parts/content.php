@@ -24,15 +24,15 @@ $downloads = pamd::get_downloads( $post->ID, false, 'array');
 			<!--Post Image-->
 			<?php if (has_post_thumbnail($post->ID)) : ?>
 				<div class="post-img">
-					<a href="<?php echo esc_url( get_permalink() ); ?>" title="Ler mais">
-						<?php the_post_thumbnail(); ?>
+					<a href="<?php echo esc_url( get_permalink() ); ?>" title="<?php echo get_the_title(); ?>" style="background-image:url( <?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>)">
+						<?php //the_post_thumbnail(); ?>
 					</a>
 				</div>
 			<?php endif; ?>
 
 			<div class="article-text">			
 			
-				<?php the_title( sprintf( '<h5 class="entry-title"><a href="%s" rel="bookmark" title="'.get_the_title().'">', esc_url( get_permalink() ) ), '</a></h5>' ); ?>
+				<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark" title="'.get_the_title().'">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 				<?php 
 					if ( ! empty( $categories ) ) {

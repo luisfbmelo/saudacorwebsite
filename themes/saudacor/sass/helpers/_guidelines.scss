@@ -83,13 +83,20 @@ h2{
 	}
 }
 
-h3{
+h3,
+.events h1.entry-title{
 	font-family: $text_font;
 	@include font-size(30px);
 	font-weight: 700;
 	@extend %heading;
+	padding-bottom:0;
+
 	@include media-query(768px){
 		@include font-size(25px);
+	}
+
+	&:after{
+		content:none;
 	}
 }
 
@@ -105,13 +112,21 @@ h4{
 
 h5,
 .widget h2,
-.widget h3{
+.widget h3,
+.archive-container h1.entry-title,
+.archive-single h1.entry-title{
 	font-family: $text_font;
 	@include font-size(22px);
 	font-weight: 600;
 	@extend %heading;
+	padding-bottom:0;
+	
 	@include media-query(768px){
 		@include font-size(18px);
+	}
+
+	&:after{
+		content:none;
 	}
 }
 

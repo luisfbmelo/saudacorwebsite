@@ -8,7 +8,7 @@
 			margin-bottom:20px;
 			margin-top:30px;
 			color:cv(primary);
-			border-bottom:1px solid cv(light-gray);
+			border-bottom:1px solid cv(search);
 			padding-bottom:15px;	
 		}
 
@@ -62,7 +62,7 @@
 			}
 		}
 
-		h3{
+		.entry-title{
 			a{
 				color:$dark-text;
 

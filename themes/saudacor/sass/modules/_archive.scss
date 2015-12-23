@@ -59,14 +59,20 @@
 		background-color:white;
 
 		.post-img{
-			max-height:250px;
 			overflow:hidden;
 			margin-top:0;
+
+			a{
+				background-repeat:no-repeat;
+				background-position: center;
+				background-size:cover;
+				height:250px;
+			}
 		}
 
 		.article-text{
 			padding:20px;
-			h5{
+			.entry-title{
 				margin-bottom:15px;
 				a{
 					color:$dark-text;

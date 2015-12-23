@@ -22,7 +22,7 @@ $event_program = get_field('event_program');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('specific-single-post'); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h5 class="entry-title">', '</h5>' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		
 		<!-- Google Maps -->
 		<?php if (!empty($event_lat) && !empty($event_long)) : ?>

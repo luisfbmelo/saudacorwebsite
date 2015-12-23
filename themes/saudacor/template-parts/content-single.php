@@ -15,7 +15,7 @@ $downloads = pamd::get_downloads( $post->ID, false, 'array');
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('generic-single-post'); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h5 class="entry-title">', '</h5>' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<time>
 			<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
 			<?php echo mysql2date('j F Y', $post->post_date) ?>
