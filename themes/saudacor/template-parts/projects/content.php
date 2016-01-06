@@ -1,4 +1,11 @@
 <?php 
+// Get post initials
+$initials = get_field('project_initials');
+
+if (!empty($initials) && $initials==true){
+	$initials = '<span>'.$initials.'</span>';
+}
+
 // Get post categories for post classes
 $terms = get_the_terms( get_the_ID(), 'project_type' );
 
@@ -26,9 +33,9 @@ if(!empty($postThumb) && $postThumb==true) {
 <article id="post-<?php the_ID(); ?>" <?php post_class('mix'.$postClasses.' project-container '.$class); ?> <?php echo $style; ?>>	
 	<?php if(!empty($postThumb)) : ?>
 		<div class="overlay">&nbsp;</div>
-		<?php the_title( sprintf( '<a href="%s" rel="bookmark" title="'.get_the_title().'" class="with-overlay"><h5 class="entry-title">', esc_url( get_permalink() ) ), '</h5></a>' ); ?>
+		<?php the_title( sprintf( '<a href="%s" rel="bookmark" title="'.get_the_title().'" class="with-overlay"><h5 class="entry-title">', esc_url( get_permalink() ) ), $initials.'</h5></a>' ); ?>
 	<?php else : ?>
-		<?php the_title( sprintf( '<a href="%s" rel="bookmark" title="'.get_the_title().'"><h5 class="entry-title">', esc_url( get_permalink() ) ), '</h5></a>' ); ?>
+		<?php the_title( sprintf( '<a href="%s" rel="bookmark" title="'.get_the_title().'"><h5 class="entry-title">', esc_url( get_permalink() ) ), $initials.'</h5></a>' ); ?>
 		
 	<?php endif; ?>
 	
