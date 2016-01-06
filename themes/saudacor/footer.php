@@ -18,6 +18,13 @@
 	<div class="container">	
 		<?php dynamic_sidebar( 'footer-sidebar' ); ?>
 	</div>
+	<div class="container copyright">
+		<div class="row">
+			<div class="col-xs-12">
+				&copy; <?php echo bloginfo('name'); ?> - <?php echo date('Y'); ?>				
+			</div>
+		</div>
+	</div>
 </footer>
 
 

@@ -1,5 +1,7 @@
 .post-img{
 	margin-top:20px;
+	max-height: 500px;
+    overflow: hidden;
 	a{
 		display:block;
 		@include transition(all 0.2s ease);
@@ -81,9 +83,9 @@
 			
 
 			p{
-				color:$light-text;
+				color:$dark-text;
 				@include font-size(14px);
-				line-height:1.5;
+				line-height:2;
 			}
 			
 			.moretag{
@@ -94,7 +96,7 @@
 }
 
 .categories-container{
-	margin-bottom:20px;
+	margin-bottom:10px;
 	a{
 		margin-bottom:10px;
 		margin-right:10px;
@@ -128,20 +130,20 @@
 	.proj-types{
 		display:block;
 		font-family: $text_font;
-		color:$light-text;
+		color:$dark-text;
 		@include font-size(14px);
 		margin-top:10px;
 	}	
 
 	p{
-		color:$light-text;
+		color:$dark-text;
 		@include font-size(14px);
-		line-height:1.5;
+		line-height:2;
 	}
 
 	.entry-header{
 		font-family: $text_font;
-		color:$light-text;
+		color:$dark-text;
 		margin-bottom:15px;
 	}
 
@@ -164,4 +166,38 @@
 .generic-page{
 	margin-top:30px;
 	margin-bottom:30px;
+}
+
+// Lists
+.entry-content{
+	ol, ul:not(.post-attached-media){
+		font-family:$text_font;
+		padding-left:25px;
+		color:$dark-text;
+		@include font-size(14px);
+		line-height:2;
+		margin-bottom:15px;
+		
+	}
+
+	ol{
+		list-style:decimal;
+	}
+
+	ul:not(.post-attached-media){
+		list-style:initial;
+	}
+
+}
+
+.sharify-container{
+	ul{
+		padding-left:0!important;
+	}
+}
+
+// No data
+.no-results{
+	margin-top:30px;
+	margin-bottom:60px;
 }

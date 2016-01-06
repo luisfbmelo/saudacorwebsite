@@ -43,6 +43,7 @@ get_header(); ?>
 						<?php dynamic_sidebar( 'single-sidebar' ); ?>
 					</aside>
 				</div>
+				
 			</div>
 		</main>
 	<?php endwhile; // End of the loop. ?>

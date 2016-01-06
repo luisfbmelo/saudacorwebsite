@@ -16,6 +16,7 @@
 			background-color:cv(light-light-gray);
 			color:$light-text;
 			@include font-size(14px);
+			line-height: 2.5;
 		}
 
 		&:hover,

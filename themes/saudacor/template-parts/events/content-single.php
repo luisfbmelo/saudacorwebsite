@@ -142,5 +142,6 @@ $event_program = get_field('event_program');
 		 ?>
 
 	</div><!-- .entry-content -->
+	<?php edit_post_link('Editar'); ?>
 
 </article><!-- #post-## -->

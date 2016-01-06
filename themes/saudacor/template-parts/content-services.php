@@ -1,7 +1,7 @@
 <?php 
 
 // Service Icon
-$loop = new WP_Query(array('post_type' => 'services', 'orderby' => 'title', 'order' => 'DESC')); 
+$loop = new WP_Query(array('post_type' => 'services', 'orderby' => 'menu_order', 'order' => 'DESC')); 
 $services_title = get_field('services_title');
  ?>
 

@@ -1,6 +1,6 @@
 .site > footer{
 	background-color:cv(footer);
-	padding:40px 0;
+	padding:30px 0 15px;
 
 	h3{
 		position:relative;
@@ -51,5 +51,15 @@
 
 	.footer-live-link{
 		color:cv(secondary);
+	}
+
+	.copyright{
+		text-align:center;
+		color:white;
+		border-top:1px solid white;
+
+		font-family: $text_font;
+		padding-top:15px;
+		@include font-size(14px);
 	}
 }

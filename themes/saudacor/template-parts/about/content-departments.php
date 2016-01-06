@@ -1,5 +1,5 @@
 <?php 
-$loop = new WP_Query(array('post_type' => 'departments', 'orderby' => 'post_id', 'order' => 'ASC')); 
+$loop = new WP_Query(array('post_type' => 'departments', 'orderby' => 'post_id', 'order' => 'DESC')); 
  ?>
 
 <?php if ($loop->have_posts()) : ?>

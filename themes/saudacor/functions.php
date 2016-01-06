@@ -86,6 +86,7 @@ function saudacor_setup() {
 endif; // saudacor_setup
 add_action( 'after_setup_theme', 'saudacor_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -362,10 +363,11 @@ add_action( 'init', 'add_custom_taxonomies', 0 );
  * Customize taxonomy query
  */
 function customize_customtaxonomy_archive_display ( $query ) {
-    if (($query->is_main_query()) && (is_tax('project_type')))
-    $query->set('meta_key', 'event_date');
-    $query->set( 'orderby', 'meta_value_num' );
-    $query->set( 'order', 'DESC' );
+    //if (($query->is_main_query()) && (is_tax('project_type'))){
+	//    $query->set('meta_key', 'event_date');
+	//    $query->set( 'orderby', 'meta_value_num' );
+	//    $query->set( 'order', 'DESC' );
+    //}
 }
  
 add_action( 'pre_get_posts', 'customize_customtaxonomy_archive_display' );
@@ -398,4 +400,24 @@ function add_current_nav_class($classes, $item) {
 
 }
 add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
+
+/**
+ * Add class to Edit button
+ */
+function custom_edit_post_link($output) {
+ $output = str_replace('class="post-edit-link"', 'class="post-edit-link cta primary small outlined"', $output);
+ return $output;
+}
+add_filter('edit_post_link', 'custom_edit_post_link');
+
+/**
+ * Give a random string from string array
+ * @param  array $strings 
+ * @return string          
+ */
+function shuffle_strings($strings){
+	$key = array_rand($strings);
+	return $strings[$key];
+}
+
 ?>

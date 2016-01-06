@@ -9,9 +9,12 @@
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h3 class="page-title"><?php esc_html_e( 'Sem Conteúdo', 'saudacor' ); ?></h3>
+<section class="no-results not-found container">
+	<header class="page-header row">
+		<div class="col-xs-12">
+			<h3 class="page-title"><?php esc_html_e( 'Sem Conteúdo', 'saudacor' ); ?></h3>
+			
+		</div>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

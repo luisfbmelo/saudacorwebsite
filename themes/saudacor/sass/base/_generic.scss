@@ -6,7 +6,11 @@ html{
 
 body{
 	font-size:16px;
-	padding-top:135px;
+	padding-top:95px;
+
+	&.give-extra{
+		padding-top:135px;
+	}
 
 	@include media-query(1200px){
 		padding-top:97px;
@@ -15,6 +19,10 @@ body{
 	@include media-query(350px){
 		padding-top:83px;
 	}
+}
+
+a,p{
+	word-wrap:break-word;
 }
 
 .entry-content{
@@ -73,4 +81,29 @@ body{
 // Formating tags
 em{
 	font-style:italic;
+}
+
+// Arrows
+.left-arrow{
+	position: relative;
+    padding-left: 20px;
+	&:before{
+	    color: $light-text;
+	    border-right: 2px solid $light-text;
+	    border-bottom: 2px solid $light-text;
+	    content: '';
+	    position: absolute;
+	    width: 10px;
+	    height: 10px
+	}
+
+	&:before{
+	    left: -2px;
+	    top:7px;
+	    @include rotate(-45deg);
+	}
+}
+
+strong{
+	font-weight:bold;
 }

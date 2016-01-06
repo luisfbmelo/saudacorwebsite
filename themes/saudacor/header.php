@@ -8,6 +8,11 @@
  *
  * @package saudacor
  */
+if(has_nav_menu( 'top-extra' )){
+	$bodyClass="give-extra";
+}
+
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -50,7 +55,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($bodyClass); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'saudacor' ); ?></a>
 	 

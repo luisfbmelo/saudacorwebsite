@@ -1,5 +1,5 @@
 .news-container{
-	padding:60px 0 0;
+	padding:60px 0 30px;
 	h1{
 		margin-bottom:10px;
 		margin-top:10px;
@@ -15,6 +15,16 @@
 	.cat-news-container{
 		padding:20px 0;
 		background-color:cv(light-light-gray);
+
+		h1{
+			font-family:$text_font;
+			@include font-size(20px);
+			color:$normal-text;
+			line-height:1.5;
+			&:after{
+				content:none;
+			}
+		}
 		.row{
 			& > article{
 				padding:30px 15px;

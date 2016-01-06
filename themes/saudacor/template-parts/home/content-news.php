@@ -36,7 +36,7 @@ $pre_button_text = get_field('pre_button_text');
 							<?php foreach ($posts as $post){?>
 								<article class="col-xs-12 col-sm-4">
 									<time><?php echo mysql2date('j F Y', $post['post_date']) ?></time>
-									<a href="<?php echo post_permalink($post['ID']) ?>" class="post-title" title="Mais sobre <?php echo $post['post_title']; ?>"><h4><?php echo $post['post_title']; ?></h4></a>
+									<a href="<?php echo post_permalink($post['ID']) ?>" class="post-title" title="Mais sobre <?php echo $post['post_title']; ?>"><h1><?php echo $post['post_title']; ?></h1></a>
 									<a href="<?php echo post_permalink($post['ID']) ?>" class="cta primary outlined small" title="Mais sobre <?php echo $post['post_title']; ?>"> Mais...</a>
 								</article>		
 

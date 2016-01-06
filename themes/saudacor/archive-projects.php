@@ -13,7 +13,7 @@ $project_cats = get_terms('project_type',array('hide_empty' => true));
 get_header(); ?>
 
 	<?php get_template_part('template-parts/content', 'generic-header' ); ?>
-	<?php if(sizeof($project_cats>0)) : ?>
+	<?php if(sizeof($project_cats)>0) : ?>
 		<div class="container filters-container">
 			<div class="filter cta primary outlined small" data-filter="all">Todos</div>
 			<?php foreach ($project_cats as $value) { ?>				
@@ -32,7 +32,11 @@ get_header(); ?>
 		<div class="container">
 			<?php wp_pagenavi(); ?>	
 		</div>
-		
+
+	<?php else : ?>
+
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
 	<?php endif; ?>
 
 <?php get_footer(); ?>

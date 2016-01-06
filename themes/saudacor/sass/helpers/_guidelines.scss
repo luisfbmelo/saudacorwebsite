@@ -11,6 +11,19 @@
 	color: cv(tertiary);
 }
 
+// Background
+.bg-primary{
+	background-color: cv(primary);
+}
+
+.bg-secondary{
+	background-color: cv(secondary);
+}
+
+.bg-tertiary{
+	background-color: cv(tertiary);
+}
+
 // Text
 .dark-text{
 	color: $dark-text;
@@ -104,10 +117,13 @@ h4{
 	font-family: $text_font;
 	@include font-size(24px);
 	font-weight: 700;
+	padding-top:10px;
+	margin-bottom:10px;
 	@extend %heading;
 	@include media-query(768px){
 		@include font-size(20px);
 	}
+
 }
 
 h5,
@@ -130,18 +146,25 @@ h5,
 	}
 }
 
+h5{
+	margin-bottom:10px;
+	padding-top:10px;
+}
+
 h6{
 	font-family: $text_font;
 	@include font-size(16px);
 	font-weight: 600;
 	@extend %heading;
+	padding-top:10px;
+	margin-bottom:10px;
 }
 
 p{
 	font-family: $text_font;
 	@include font-size(16px);
-	line-height:1.5;
-	margin-bottom:15px;
+	line-height:2;
+	margin-bottom:10px;
 }
 
 // Borders

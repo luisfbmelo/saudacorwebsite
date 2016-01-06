@@ -63,5 +63,6 @@ $downloads = pamd::get_downloads( $post->ID, false, 'array');
 		 ?>
 
 	</div><!-- .entry-content -->
+	<?php edit_post_link('Editar'); ?> 
 
 </article><!-- #post-## -->
