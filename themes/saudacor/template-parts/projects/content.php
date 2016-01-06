@@ -16,14 +16,14 @@ $postThumb = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
 // Set box background
 $style = null;
 $class = null;
-if(!empty($postThumb)) {
-	$style='background-image:url('. $postThumb .');';
+if(!empty($postThumb) && $postThumb==true) {
+	$style='style="background-image:url('. $postThumb .');"';
 }else{
-	$class = shuffle_strings(['bg-primary','bg-secondary']);
+	$class = shuffle_strings(array('bg-primary','bg-secondary'));
 }
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('mix'.$postClasses.' project-container '.$class); ?> style="<?php echo $style; ?>">	
+<article id="post-<?php the_ID(); ?>" <?php post_class('mix'.$postClasses.' project-container '.$class); ?> <?php echo $style; ?>>	
 	<?php if(!empty($postThumb)) : ?>
 		<div class="overlay">&nbsp;</div>
 		<?php the_title( sprintf( '<a href="%s" rel="bookmark" title="'.get_the_title().'" class="with-overlay"><h5 class="entry-title">', esc_url( get_permalink() ) ), '</h5></a>' ); ?>

@@ -416,7 +416,7 @@ add_filter('edit_post_link', 'custom_edit_post_link');
  * @return string          
  */
 function shuffle_strings($strings){
-	$key = array_rand($strings);
+	$key = shuffle($strings);
 	return $strings[$key];
 }
 
