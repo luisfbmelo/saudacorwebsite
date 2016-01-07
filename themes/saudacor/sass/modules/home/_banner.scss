@@ -1,8 +1,9 @@
 .banner-section{
-	
+	overflow:hidden;
 	position:relative;
 	max-height:$banner-height;
 	width:100%;
+	text-align: center;
 	img{
 		width:100%;
 	}
