@@ -27,17 +27,19 @@ $services_title = get_field('services_title');
 				<?php endif; ?>
 
 				<h6><?php the_title(); ?></h6>
-				<p><?php the_content(); ?></p>
-
-				<?php 
-					if($post_idx % 2 == 0){
-						echo '<div class="clearfix visible-sm-block"></div>';
-					}
-					if($post_idx % 5 == 0){
-						echo '<div class="clearfix visible-md-block"></div>';
-					}
-				?>
+				<?php if($post->post_content != "") : ?>
+					<p><?php the_content(); ?></p>
+				<?php endif; ?>				
 			</article>
+
+			<?php 
+				if($post_idx % 2 == 0){
+					echo '<div class="clearfix visible-sm-block"></div>';
+				}
+				if($post_idx % 5 == 0){
+					echo '<div class="clearfix visible-md-block"></div>';
+				}
+			?>
 			<?php $post_idx++; endwhile; wp_reset_query();?>
 		</div>
 	</div>

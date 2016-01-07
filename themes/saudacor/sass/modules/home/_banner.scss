@@ -1,7 +1,7 @@
 .banner-section{
 	
 	position:relative;
-	min-height:$banner-height;
+	max-height:$banner-height;
 	width:100%;
 	img{
 		width:100%;
@@ -11,25 +11,23 @@
 		width:100%;
 		height:100%;
 		background-color: cv(secondary);
-		min-height:$banner-height;
+		max-height:$banner-height;
 
 		@include media-query(768px){
-			min-height:$banner-small-height;
+			max-height:none;
 			padding-bottom:40px;
 		}
 	}
 
 	@include media-query(768px){
-		min-height:auto;
+		max-height:none;
 	}
 }
 
 .banner-box{
 	.corporate{
-		margin-top:120px;
-		@include media-query(768px){
-			margin-top:50px;
-		}
+		margin-top:70px;
+		
 		img{
 			display:block;
 			width:130px;
@@ -44,9 +42,11 @@
 			font-weight:400;
 			margin-bottom:30px;
 
-			@include media-query(768px){
-				@include font-size(30px);
+			@include media-query(1000px){
+				@include font-size(26px);
+				font-weight:500;
 			}
+
 		}
 
 		p{
@@ -54,17 +54,23 @@
 			color:white;
 			text-align:center;
 			margin-top:10px;
-			@include font-size(24px);
+			@include font-size(22px);
 			line-height:1.5;
-			@include media-query(768px){
-				@include font-size(20px);
+
+			@include media-query(1000px){
+				@include font-size(18px);
 			}
+
+		}
+
+		@include media-query(768px){
+			margin-top:50px;
 		}
 
 	}
 
 	.medic-image{
-		height:550px;
+		height:$banner-height;
 		position:relative;
 		
 		img{
