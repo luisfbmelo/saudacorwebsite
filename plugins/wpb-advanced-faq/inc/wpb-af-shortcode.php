@@ -98,7 +98,7 @@ if ( !function_exists('wpb_af_shortcode_function') ){
 
 		<?php
 		}else{
-			_e( '<h2 class="text-center">'.'No Post Found For FAQ.'.'</h2>', 'margo' );
+			_e( '<h2 class="text-center">'.'Na&#771;o existem ainda questo&#771;es.'.'</h2>', 'margo' );
 		}
 		wp_reset_postdata();  // Reset
 		return ob_get_clean();
