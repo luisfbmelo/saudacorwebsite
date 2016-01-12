@@ -27,22 +27,44 @@ if ( !function_exists('wpb_af_shortcode_function') ){
 			'order' 				=> $order,
 			'posts_per_page' 		=> $post,
 			'wpb_af_faq_category'	=> $category,
-			'wpb_af_faq_tags'		=> $tags,
+			'wpb_af_faq_tags'		=> $tags
 		));
 
 		$wpb_af_id = rand(10,1000);
 
 		ob_start();
 
+		// Control variable for grouping
+		$group = '';
+
 		if ($wp_query->have_posts()){ 
 		?>
 		<div id="wpb_af_<?php echo $wpb_af_id; ?>" class="wpb_af_<?php echo $theme; ?>_theme">
 			<ul class="wpb_af_area">
-				<?php while ($wp_query->have_posts()) : $wp_query->the_post();?>
+				<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+				<?php
+					
+					// Check if order is by category
+					if ($orderby == 'category'){
+						$category = get_the_terms(get_the_id(),'wpb_af_faq_category');
+						$postorder=$category[0]->name;
+					}else{
+        				$postorder = get_post_meta( get_the_ID(), $orderby, true );
+					}				
+					
+
+        			// Group elements
+			        if ( $postorder != $group ) {
+			            echo '<h4>' . $postorder . '</h4>';
+			            // ...and change the stored date for the current group
+			            $group = $postorder;
+			        }
+        		?>
+
 					<?php $faq_content = get_the_content(); ?>
 					<li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<a href="#"><?php the_title(); ?></a>
-						<?php if( $faq_content && $faq_content != '' ):?>
+						<?php if( $faq_content && $faq_content != '' ): ?>
 							<ul>
 			                    <li><?php the_content(); ?></li>
 			                </ul>

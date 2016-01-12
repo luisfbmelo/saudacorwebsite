@@ -76,7 +76,7 @@ $event_program = get_field('event_program');
 			the_content();
 
 			// Event Program
-			if ( $event_program ) {
+			if ( $event_program) {
 
 				echo '<div class="event-program">';
 
