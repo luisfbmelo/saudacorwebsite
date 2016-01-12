@@ -55,9 +55,14 @@ if ( !function_exists('wpb_af_shortcode_function') ){
 
         			// Group elements
 			        if ( $postorder != $group ) {
-			            echo '<h4>' . $postorder . '</h4>';
-			            // ...and change the stored date for the current group
+			        	// ...and change the stored date for the current group
 			            $group = $postorder;
+
+			        	if ( empty($group)){
+				        	$group = 'Outros';
+				        }
+
+			            echo '<h4>' . $group . '</h4>';			            
 			        }
         		?>
 
