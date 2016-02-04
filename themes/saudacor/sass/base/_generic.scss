@@ -94,13 +94,17 @@ em{
 	    content: '';
 	    position: absolute;
 	    width: 10px;
-	    height: 10px
-	}
+	    height: 10px;
 
-	&:before{
 	    left: -2px;
 	    top:7px;
 	    @include rotate(-45deg);
+	}
+
+	& + .left-arrow{
+		&:before{
+			top:22px;
+		}
 	}
 }
 
