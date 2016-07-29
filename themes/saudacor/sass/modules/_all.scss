@@ -35,3 +35,11 @@
 @import "widget";
 @import "media";
 @import "breadcrumbs";
+
+// +SRS
+@import "srs/generic";
+@import "srs/banner";
+@import "srs/about";
+@import "srs/start";
+@import "srs/stores";
+@import "srs/video";

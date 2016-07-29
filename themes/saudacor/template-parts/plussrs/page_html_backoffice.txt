@@ -1,0 +1,75 @@
+<div class="srs"><section class="banner__container"><img class="img-responsive" src="/wp-content/themes/saudacor/img/plussrs/images/Banner/1 - Azores caminho.jpg" />
+<div class="banner__text">
+<h1>A Saúde nos Açores
+ficou mais próxima!</h1>
++SRS a aplicação que o liga à saúde,
+obtenha-a gratuitamente na sua loja
+<ul>
+ 	<li><a href="https://itunes.apple.com/us/app/+srs/id1134645766?l=pt&amp;ls=1&amp;mt=8">
+<img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_AppStore.png" alt="Aplicação na App Store" />
+</a></li>
+ 	<li><a href="https://play.google.com/store/apps/details?id=net.medicineone.maissrsandroid">
+<img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_GooglePlay.png" alt="Aplicação no Google Play" />
+</a></li>
+</ul>
+</div>
+</section><!-- ABOUT -->
+<div class="container"><section class="about">
+<div class="row"><article class="col-xs-6 col-sm-4">
+<h5>O que é</h5>
+A +SRS é uma app gratuita, dedicada aos utentes disponível para iPhone a Android.
+
+</article><article class="col-xs-6 col-sm-4">
+<h5>Para que serve?</h5>
+A +SRS foi concebida para lhe dar acesso ao mais importante do seu processo clínico, recordá-lo no momento da toma de cada medicamento e ser um novo canal de comunicação com o seu médico
+
+</article><article class="col-xs-6 col-sm-4">
+<h5>Quais as vantagens?</h5>
+A +SRS dá-lhe um lugar central na gestão da sua saúde. Com ela tem acesso aos dados mais relevantes, podendo assim partilhá-los com outros profissionais. Ao mesmo tempo, permite ao profissional um acompanhamento contínuo dos tratamentos.
+
+</article></div>
+</section></div>
+<!-- WHAT IS -->
+
+<section class="whatis">
+<h1>Como começar?</h1>
+<ul>
+ <li><figure><img src="/wp-content/themes/saudacor/img/plussrs/icons/iPhone cinza/Mockup_store.png" alt="Mockup Loja" /></figure><span class="step">1</span>Aceda à loja do seu smartphone e instale a aplicação</li> <li><figure><img src="/wp-content/themes/saudacor/img/plussrs/icons/iPhone cinza/Mockup_registo.png" alt="Mockup Registo" /></figure><span class="step">2</span>Registe-se na +SRS</li> <li><figure><img src="/wp-content/themes/saudacor/img/plussrs/icons/iPhone cinza/Mockup_email.png" alt="Mockup Email" /></figure><span class="step">3</span>Forneça ao seu médico o e-mail que utilizou no registo e peça-lhe o código de ativação. Este ser-lhe-á enviado por e-mail</li> <li><figure><img src="/wp-content/themes/saudacor/img/plussrs/icons/iPhone cinza/Mockup_introcodigo.png" alt="Mockup Introduzir Código" /></figure><span class="step">4</span>Introduza o código na aplicação +SRS</li> <li><figure><img src="/wp-content/themes/saudacor/img/plussrs/icons/iPhone cinza/Mockup_eu.png" alt="Mockup Final" /></figure><span class="step">5</span>Já está pronta a usar!</li>
+</ul>
+</section><!-- STORES -->
+
+<section class="stores container"><input id="select_iphone" class="preview_input" checked="checked" name="previews" type="radio" />
+<input id="select_android" class="preview_input" name="previews" type="radio" />
+<div class="row table"><section class="table-cell stores__buttons visible-xs-block"><span class="title">Escolha o seu dispositivo para ver a demonstração</span>
+<div class="selectables"><ul><li><label for="select_iphone" class="preview_input_label select_iphone"></label></li><li><label for="select_android" class="preview_input_label select_android"></label></li></ul></div>
+<div class="stores_badges">
+
+Obtenha gratuitamente o eu+ na sua loja
+<ul>
+ 	<li><a href="https://itunes.apple.com/us/app/+srs/id1134645766?l=pt&amp;ls=1&amp;mt=8">
+<img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_AppStore.png" alt="Aplicação na App Store" />
+</a></li>
+ 	<li><a href="https://play.google.com/store/apps/details?id=net.medicineone.maissrsandroid">
+<img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_GooglePlay.png" alt="Aplicação no Google Play" />
+</a></li>
+</ul>
+</div>
+</section><section class="table-cell stores__previews"><img class="iphone_preview" src="/wp-content/themes/saudacor/img/plussrs/images/Demos/preview_iphone.gif" alt="Visualização iPhone" />
+<img class="android_preview" src="/wp-content/themes/saudacor/img/plussrs/images/Demos/preview_android.gif" alt="Visualização Android" /></section><section class="table-cell stores__buttons hidden-xs"><span class="title">Escolha o seu dispositivo para ver a demonstração</span>
+<div class="selectables"><ul><li><label for="select_iphone" class="preview_input_label select_iphone"></label></li><li><label for="select_android" class="preview_input_label select_android"></label></li></ul></div>
+<div class="stores_badges">
+
+Obtenha gratuitamente o eu+ na sua loja
+<ul>
+ 	<li><a href="https://itunes.apple.com/us/app/+srs/id1134645766?l=pt&amp;ls=1&amp;mt=8">
+<img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_AppStore.png" alt="Aplicação na App Store" />
+</a></li>
+ 	<li><a href="https://play.google.com/store/apps/details?id=net.medicineone.maissrsandroid">
+<img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_GooglePlay.png" alt="Aplicação no Google Play" />
+</a></li>
+</ul>
+</div>
+</section></div>
+</section><!-- VIDEO -->
+
+<section class="srs__video">[video_lightbox_youtube video_id="SOT6LGiZTXw" width="640" height="480" auto_thumb="1"]</section></div>

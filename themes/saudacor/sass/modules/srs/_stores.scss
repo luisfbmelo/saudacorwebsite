@@ -1,0 +1,145 @@
+.stores.container{
+	.table{
+
+		@include media-query(768px){
+			display:block;
+		}
+
+		.table-cell{
+			width:50%;
+			vertical-align: middle;
+			text-align:center;
+
+			@include media-query(768px){
+				display:block;
+				width:100%;
+				vertical-align:top;
+			}
+		}
+	}
+
+	img{
+		margin:0 auto;
+	}
+
+	li{
+		display:inline-block;
+
+		& + li{
+			margin-left:30px;
+		}
+	}
+
+	.stores_badges{
+		margin-top:30px;
+		p{
+			@include font-size(16px);
+		}
+	}
+
+	.stores__buttons{
+
+		margin-top:50px;
+
+		span.title{
+			@include font-size(18px);
+			display:block;
+			color:black;
+			position:relative;
+			padding-bottom:15px;
+			margin-bottom:30px;
+
+			font-family: $text_font;
+			text-align:center;
+
+			&:after{
+				content:"";
+				position:absolute;
+				bottom:0;
+				left:50%;
+				margin-left:-15px;
+				width:30px;
+				height:3px;
+				background-color: black;
+				
+			}
+		}
+	}
+
+	// Preview actions
+	.preview_input{
+		display:none;
+	}
+
+	.preview_input_label{
+		width:120px;
+		height:120px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		&:hover{
+			cursor: pointer;
+		}
+	}
+
+	.stores__previews{
+		text-align:center;
+
+		img{
+			max-height:700px;
+			padding:60px 0;
+		}
+	}
+
+	// Labels
+	label.select_iphone{		
+		background-image: url('../img/plussrs/icons/Circulos Apple Android/DevicesEu_iOS.png');		
+		
+		&:hover{
+			background-image: url('../img/plussrs/icons/Circulos Apple Android/DevicesEu_iOS_hover.png');
+		}
+	}
+
+	label.select_android{		
+		background-image: url('../img/plussrs/icons/Circulos Apple Android/DevicesEu_Android.png');		
+		
+		&:hover{
+			background-image: url('../img/plussrs/icons/Circulos Apple Android/DevicesEu_Android_hover.png');
+		}
+	}
+
+	// Selects
+	#select_iphone{
+		& ~ .table .stores__previews .iphone_preview{
+			display:none;
+		}
+
+		&:checked{
+			& ~ .table .stores__previews .iphone_preview{
+				display:block;
+			}
+
+			& ~ .table .stores__buttons .select_iphone{
+				background-image: url('../img/plussrs/icons/Circulos Apple Android/DevicesEu_iOS_hover.png');
+			}
+		}
+	}
+
+	#select_android{
+		& ~ .table .stores__previews .android_preview{
+			display:none;
+		}
+
+		&:checked{
+			& ~ .table .stores__previews .android_preview{
+				display:block;
+			}
+
+			& ~ .table .stores__buttons .select_android{
+				background-image: url('../img/plussrs/icons/Circulos Apple Android/DevicesEu_Android_hover.png');
+			}
+		}
+	}
+	
+}

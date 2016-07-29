@@ -1,0 +1,51 @@
+.banner{
+	&__container{
+		position:relative;
+		width:100%;		
+	}
+
+	&__text{
+		margin: auto;
+	    position: absolute;
+	    top: 0;
+	    left: auto;
+	    bottom: 0;
+	    right: 0;
+	    width: 50%;
+	    height: 50%;
+	    color:white;
+	    @include text-shadow(2px 2px black);
+
+	    @include media-query(768px){
+			width:auto;
+			height:auto;
+			left:0;
+			padding:30px;
+		}
+
+	    h1{
+	    	font-family: $text_font;
+	    	&:after{
+	    		content:none;
+	    	}
+	    	margin-bottom:30px;
+	    	line-height:1.2;
+	    }
+
+	    p{
+	    	@include font-size(24px);
+	    	line-height:1.5;
+	    	margin-bottom:30px;
+	    }
+
+		ul{
+			li{
+				display:inline-block;
+
+				& + li{
+					margin-left:30px;
+				}
+			}
+		}
+	}
+}

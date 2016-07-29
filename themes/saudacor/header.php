@@ -8,6 +8,7 @@
  *
  * @package saudacor
  */
+$bodyClass='';
 if(has_nav_menu( 'top-extra' )){
 	$bodyClass="give-extra";
 }
