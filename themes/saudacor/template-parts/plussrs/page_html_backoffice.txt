@@ -1,5 +1,5 @@
 <div class="srs"><section class="banner__container"><img class="img-responsive banner-img" src="/wp-content/themes/saudacor/img/plussrs/images/Banner/1 - Azores caminho.jpg" />
-<div class="banner__text">
+<div class="banner__text" style="background-image:url('/wp-content/themes/saudacor/img/plussrs/images/Banner/1 - Azores caminho.jpg')">
 <h1>A Saúde nos Açores
 ficou mais próxima!</h1>
 +SRS a aplicação que o liga à saúde,

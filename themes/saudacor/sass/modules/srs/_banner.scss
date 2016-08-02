@@ -27,8 +27,11 @@
 			height:auto;
 			left:0;
 			padding:30px;
-			background:url('../img/plussrs/images/Banner/1 - Azores caminho.jpg') no-repeat;
 			background-size: cover;
+		}
+
+		@include media-query-min(1120px){
+			background:none!important;
 		}
 
 		@include media-query(1120px){
