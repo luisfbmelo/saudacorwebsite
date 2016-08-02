@@ -44,7 +44,7 @@ A +SRS dá-lhe um lugar central na gestão da sua saúde. Com ela tem acesso aos da
 <div class="selectables"><ul><li><label for="select_iphone" class="preview_input_label select_iphone"></label></li><li><label for="select_android" class="preview_input_label select_android"></label></li></ul></div>
 <div class="stores_badges">
 
-Obtenha gratuitamente o eu+ na sua loja
+Obtenha gratuitamente o +srs na sua loja
 <ul>
  	<li><a href="https://itunes.apple.com/us/app/+srs/id1134645766?l=pt&amp;ls=1&amp;mt=8">
 <img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_AppStore.png" alt="Aplicação na App Store" />
@@ -59,7 +59,7 @@ Obtenha gratuitamente o eu+ na sua loja
 <div class="selectables"><ul><li><label for="select_iphone" class="preview_input_label select_iphone"></label></li><li><label for="select_android" class="preview_input_label select_android"></label></li></ul></div>
 <div class="stores_badges">
 
-Obtenha gratuitamente o eu+ na sua loja
+Obtenha gratuitamente o +srs na sua loja
 <ul>
  	<li><a href="https://itunes.apple.com/us/app/+srs/id1134645766?l=pt&amp;ls=1&amp;mt=8">
 <img src="/wp-content/themes/saudacor/img/plussrs/icons/Badges Stores/Badge_AppStore.png" alt="Aplicação na App Store" />
