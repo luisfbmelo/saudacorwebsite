@@ -1,4 +1,4 @@
-<div class="srs"><section class="banner__container"><img class="img-responsive" src="/wp-content/themes/saudacor/img/plussrs/images/Banner/1 - Azores caminho.jpg" />
+<div class="srs"><section class="banner__container"><img class="img-responsive banner-img" src="/wp-content/themes/saudacor/img/plussrs/images/Banner/1 - Azores caminho.jpg" />
 <div class="banner__text">
 <h1>A Saúde nos Açores
 ficou mais próxima!</h1>
@@ -15,15 +15,15 @@ obtenha-a gratuitamente na sua loja
 </div>
 </section><!-- ABOUT -->
 <div class="container"><section class="about">
-<div class="row"><article class="col-xs-6 col-sm-4">
+<div class="row"><article class="col-xs-12 col-sm-4">
 <h5>O que é</h5>
 A +SRS é uma app gratuita, dedicada aos utentes disponível para iPhone a Android.
 
-</article><article class="col-xs-6 col-sm-4">
+</article><article class="col-xs-12 col-sm-4">
 <h5>Para que serve?</h5>
 A +SRS foi concebida para lhe dar acesso ao mais importante do seu processo clínico, recordá-lo no momento da toma de cada medicamento e ser um novo canal de comunicação com o seu médico
 
-</article><article class="col-xs-6 col-sm-4">
+</article><article class="col-xs-12 col-sm-4">
 <h5>Quais as vantagens?</h5>
 A +SRS dá-lhe um lugar central na gestão da sua saúde. Com ela tem acesso aos dados mais relevantes, podendo assim partilhá-los com outros profissionais. Ao mesmo tempo, permite ao profissional um acompanhamento contínuo dos tratamentos.
 
@@ -40,7 +40,7 @@ A +SRS dá-lhe um lugar central na gestão da sua saúde. Com ela tem acesso aos da
 
 <section class="stores container"><input id="select_iphone" class="preview_input" checked="checked" name="previews" type="radio" />
 <input id="select_android" class="preview_input" name="previews" type="radio" />
-<div class="row table"><section class="table-cell stores__buttons visible-xs-block"><span class="title">Escolha o seu dispositivo para ver a demonstração</span>
+<div class="table"><section class="table-cell stores__buttons visible-xs-block"><span class="title">Escolha o seu dispositivo para ver a demonstração</span>
 <div class="selectables"><ul><li><label for="select_iphone" class="preview_input_label select_iphone"></label></li><li><label for="select_android" class="preview_input_label select_android"></label></li></ul></div>
 <div class="stores_badges">
 
@@ -54,8 +54,8 @@ Obtenha gratuitamente o eu+ na sua loja
 </a></li>
 </ul>
 </div>
-</section><section class="table-cell stores__previews"><img class="iphone_preview" src="/wp-content/themes/saudacor/img/plussrs/images/Demos/preview_iphone.gif" alt="Visualização iPhone" />
-<img class="android_preview" src="/wp-content/themes/saudacor/img/plussrs/images/Demos/preview_android.gif" alt="Visualização Android" /></section><section class="table-cell stores__buttons hidden-xs"><span class="title">Escolha o seu dispositivo para ver a demonstração</span>
+</section><section class="table-cell stores__previews"><img class="iphone_preview img-responsive" src="/wp-content/themes/saudacor/img/plussrs/images/Demos/preview_iphone.gif" alt="Visualização iPhone" />
+<img class="android_preview img-responsive" src="/wp-content/themes/saudacor/img/plussrs/images/Demos/preview_android.gif" alt="Visualização Android" /></section><section class="table-cell stores__buttons hidden-xs"><span class="title">Escolha o seu dispositivo para ver a demonstração</span>
 <div class="selectables"><ul><li><label for="select_iphone" class="preview_input_label select_iphone"></label></li><li><label for="select_android" class="preview_input_label select_android"></label></li></ul></div>
 <div class="stores_badges">
 
